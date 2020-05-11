@@ -1,0 +1,71 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}%
+
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{rsfso}
+\usepackage{enumerate}
+\usepackage{outlines}
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{bbm}
+\usepackage[margin=1in]{geometry}
+\usepackage[parfill]{parskip}
+\pagestyle{fancy}
+
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{3pt}}
+
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\begin{document}
+
+\lhead{Political economy and its future (Spring 2020)}
+\rhead{Sahil Chinoy}
+
+\textit{The world’s economic and political order reels under mounting challenges: the global financial crisis, the austerity debacle, a slowdown in economic growth and productivity, the aggravation of inequality and the inadequacy of conventional responses to it, the discrediting of the Washington Consensus, the globalization backlash, the re-emergence of nationalist politics in Europe and the United States, and a contest over the meaning, value, and requirements of democracy. We examine connections among these phenomena and explore alternative ways of thinking about contemporary market economies and their reconstruction. We organize the course around four related themes: the worldwide financial and economic crisis of the recent past and its management; the effort to promote socially inclusive economic growth in richer as well as in poorer countries; the nature, fate, and dissemination of the new knowledge-intensive style of production; and the past, present, and future of globalization.}
+
+\textit{Dani Rodrik (Harvard Kennedy School), Roberto Mangabeira Unger (Harvard Law School)}
+
+\tableofcontents
+
+\input{"tex/lectures.tex"}
+
+\end{document}
